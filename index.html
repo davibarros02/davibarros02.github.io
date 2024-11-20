@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900">
+</head>
+
+<body>
+    <header>
+        <h1>Form and Table</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Fill the form and click on the save button to add a new row to the table.</p>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" required>
+                    </td>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="datetime-local">Datetime-local: </label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" id="datetime-local" required>
+                    </td>
+                    <td>
+                        <label for="number">Number: </label>
+                    </td>
+                    <td>
+                        <input type="number" id="number" required>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <button type="submit">Save</button>
+
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Text</th>
+                        <th>Email</th>
+                        <th>Datetime-local</th>
+                        <th>Number</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </article>
+
+        <script src="script.js"></script>
+
+    </main>
+
+
+    <footer>
+        <p>Hosted at: <a href="https://pages.github.com/">GitHub Pages</a></p>
+    </footer>
+</body>
+
+</html>
