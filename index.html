@@ -1,68 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>tech eventos</title>
 </head>
 
 <body>
     <header>
-        <h1>Form and Table</h1>
+        <h1>Tech Eventos</h1>
     </header>
 
+    <nav>
+        <h2>Orçamento</h2>
+    </nav>
     <main>
         <section>
-            <p>Fill the form and click on the save button to add a new row to the table.</p>
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Name: </label>
-                    </td>
-                    <td>
-                        <input type="text" id="name" required>
-                    </td>
-                    <td>
-                        <label for="email">Email: </label>
-                    </td>
-                    <td>
-                        <input type="email" id="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="datetime-local">Datetime-local: </label>
-                    </td>
-                    <td>
-                        <input type="datetime-local" id="datetime-local" required>
-                    </td>
-                    <td>
-                        <label for="number">Number: </label>
-                    </td>
-                    <td>
-                        <input type="number" id="number" required>
-                    </td>
-                </tr>
-            </table>
+            <div id="left">
+                <p>Não perca mais tempo e solicite agora um orçamento online.</p>
+                <p><strong>Utilize o formulário</strong> para informar os detalhes principais do projeto.</p>
+                <p>No prazo de 24horas nossa equipe retornará o contato.</p>
+                <p>Se preferir, entre em contato por:</p>
+                <p><strong>Telefone Fixo:</strong> (11) 1234-5678</p>
+                <p><strong>Whatsapp:</strong> (11) 98765-4321</p>
+                <p><strong>E-mail:</strong> algum@email.com</p>
+            </div>
+
+            <div id="right">
+                <table>
+                    <tr>
+                        <td>
+                            <label for=" name">Nome Completo: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="Nome Completo" required>
+                        </td>
+                        <td>
+                            <label for="email">E-mail: </label>
+                        </td>
+                        <td>
+                            <input type="email" name="E-mail" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tel-fixo">Telefone Fixo: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="Telefone Fixo">
+                        </td>
+                        <td>
+                            <label for="tel-cel">Whatsapp: </label>
+                        </td>
+                        <td>
+                            <input type="tel" name="Whatsapp" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cidade">Cidade: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="Cidade" required>
+                        </td>
+                        <td>
+                            <label for="estado">Estado: </label>
+                        </td>
+                        <td>
+                            <select name="Estado" required>
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato Grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraíba</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pe">Pernambuco</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="ro">Rondônia</option>
+                                <option value="rr">Roraima</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="se">Sergipe</option>
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="projeto-nome">Nome do Projeto: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="Nome do Projeto" required>
+                        </td>
+                        <td>
+                            <label for="tipo-projeto">Tipo de Projeto: </label>
+                        </td>
+                        <td>
+                            <select name="Tipo de Projeto" required>
+                                <option value="site">Cenografia</option>
+                                <option value="app">Estande</option>
+                                <option value="sistema">PDV</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="data-inicio">Data de Início: </label>
+                        </td>
+                        <td>
+                            <input type="date" name="Data de Início" required>
+                        </td>
+                        <td>
+                            <label for="data-fim">Data de Término: </label>
+                        </td>
+                        <td>
+                            <input type="date" name="Data de Término" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="observacoes">Observações: </label>
+                        </td>
+                        <td colspan="3">
+                            <textarea name="Observações" cols="70" rows="5"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Save</button>
+            </div>
         </section>
 
-        <button type="submit">Save</button>
 
         <article>
             <table>
                 <thead>
-                    <tr>
-                        <th>Text</th>
-                        <th>Email</th>
-                        <th>Datetime-local</th>
-                        <th>Number</th>
-                        <th></th>
-                    </tr>
                 </thead>
                 <tbody>
                 </tbody>
@@ -75,7 +168,7 @@
 
 
     <footer>
-        <p>Hosted at: <a href="https://pages.github.com/">GitHub Pages</a></p>
+        <p>Hosted at: <a href="https://davibarros02.github.io/">GitHub Pages</a></p>
     </footer>
 </body>
 
